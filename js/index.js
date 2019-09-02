@@ -103,6 +103,14 @@ addedNav.prepend(secAnchor);
 let greenNav = document.querySelectorAll("a");
 greenNav.forEach((arr) => arr.style.color = 'green');
 
+let greenCta = document.querySelector(".cta");
+greenCta.style.backgroundColor = "green";
+
+let greenH4 = document.querySelectorAll(".main-content .text-content h4");
+greenH4.forEach((arr) => arr.style.color = "green");
+
+
+
 
 
 
