@@ -58,12 +58,31 @@ ctaButton[0].textContent = siteContent["cta"]["button"];
 let ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
-let mainContent = document.getElementsByClassName("text-content");
+let mainContent = document.querySelectorAll(".main-content  .text-content h4");
 mainContent[0].textContent = siteContent["main-content"]["features-h4"];
 mainContent[1].textContent = siteContent["main-content"]["about-h4"];
 mainContent[2].textContent = siteContent["main-content"]["services-h4"];
 mainContent[3].textContent = siteContent["main-content"]["product-h4"];
-mainContent[4].textContent = siteContent["main-content"]["vision-h4"];
+
+let mainContentP = document.querySelectorAll(".main-content  .text-content p");
+mainContentP[0].textContent = siteContent["main-content"]["features-content"];
+mainContentP[1].textContent = siteContent["main-content"]["about-content"];
+mainContentP[2].textContent = siteContent["main-content"]["services-content"];
+mainContentP[3].textContent = siteContent["main-content"]["product-content"];
+
+let mainContentImg = document.getElementById("middle-img");
+mainContentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+let contact = document.querySelectorAll(".contact h4");
+contact[0].textContent = siteContent["contact"]["contact-h4"];
+let contactAddress = document.querySelectorAll(".contact p");
+contactAddress[0].textContent = siteContent["contact"]["address"];
+contactAddress[1].textContent = siteContent["contact"]["phone"];
+contactAddress[2].textContent = siteContent["contact"]["email"];
+
+let footer = document.getElementsByTagName("footer");
+footer[0].textContent =siteContent["footer"]["copyright"];
+
 
 
 
