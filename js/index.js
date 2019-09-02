@@ -49,6 +49,7 @@ nav[3].textContent = siteContent["nav"]["nav-item-4"];
 nav[4].textContent = siteContent["nav"]["nav-item-5"];
 nav[5].textContent = siteContent["nav"]["nav-item-6"];
 
+
 let ctaText = document.querySelectorAll(".cta .cta-text h1");
 ctaText[0].textContent = siteContent["cta"]["h1"];
 
@@ -82,6 +83,26 @@ contactAddress[2].textContent = siteContent["contact"]["email"];
 
 let footer = document.getElementsByTagName("footer");
 footer[0].textContent =siteContent["footer"]["copyright"];
+
+
+let addedNav = document.querySelector("nav");
+
+let newAnchor = document.createElement("a");
+newAnchor.textContent = "Login";
+addedNav.appendChild(newAnchor);
+
+
+let firstAnchor = document.createElement("a");
+firstAnchor.textContent = "New users";
+addedNav.prepend(firstAnchor);
+
+let secAnchor = document.createElement("a");
+secAnchor.textContent = "Old users";
+addedNav.prepend(secAnchor);
+
+let greenNav = document.querySelectorAll("a");
+greenNav.forEach((arr) => arr.style.color = 'green');
+
 
 
 
