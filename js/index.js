@@ -41,6 +41,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
+// navigation anchors
 let nav = document.querySelectorAll("a");
 nav[0].textContent = siteContent["nav"]["nav-item-1"];
 nav[1].textContent = siteContent["nav"]["nav-item-2"];
@@ -49,7 +50,7 @@ nav[3].textContent = siteContent["nav"]["nav-item-4"];
 nav[4].textContent = siteContent["nav"]["nav-item-5"];
 nav[5].textContent = siteContent["nav"]["nav-item-6"];
 
-
+//header section
 let ctaText = document.querySelectorAll(".cta .cta-text h1");
 ctaText[0].textContent = siteContent["cta"]["h1"];
 
@@ -59,6 +60,7 @@ ctaButton[0].textContent = siteContent["cta"]["button"];
 let ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
+// main section
 let mainContent = document.querySelectorAll(".main-content  .text-content h4");
 mainContent[0].textContent = siteContent["main-content"]["features-h4"];
 mainContent[1].textContent = siteContent["main-content"]["about-h4"];
@@ -74,6 +76,7 @@ mainContentP[3].textContent = siteContent["main-content"]["product-content"];
 let mainContentImg = document.getElementById("middle-img");
 mainContentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
+//contact section
 let contact = document.querySelectorAll(".contact h4");
 contact[0].textContent = siteContent["contact"]["contact-h4"];
 let contactAddress = document.querySelectorAll(".contact p");
@@ -81,10 +84,11 @@ contactAddress[0].textContent = siteContent["contact"]["address"];
 contactAddress[1].textContent = siteContent["contact"]["phone"];
 contactAddress[2].textContent = siteContent["contact"]["email"];
 
+//footer section
 let footer = document.getElementsByTagName("footer");
 footer[0].textContent =siteContent["footer"]["copyright"];
 
-
+// stretch
 let addedNav = document.querySelector("nav");
 
 let newAnchor = document.createElement("a");
